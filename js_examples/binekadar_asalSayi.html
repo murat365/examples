@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <body>
+      <script>
+        function binekadar_asalSayi() {
+          for (let i = 2; i < 1000; i++) {
+            let sonuc = 0;
+            for (let j = 2; j < i; j++) {
+              if (i % j == 0) {
+                sonuc++;
+              }
+            }
+            if (sonuc == 0) {
+                console.log(i + "asal sayıdır");
+              }
+              else{i+ "asal sayı değildir"}
+          }
+        }
+        binekadar_asalSayi();
+      </script>
+    </body>
+  </head>
+</html>

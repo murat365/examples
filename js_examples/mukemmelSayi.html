@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <body>
+      <script>
+        function mukemmelSayi() {
+          for (let i = 1; i <= 1000; i++) {
+            let sonuc = 0;
+            for (let j = 0; j < i; j++) {
+              if (i % j == 0) {
+                sonuc += j;
+              }
+            }
+            if (sonuc == i) {
+              console.log(i + "mükemmel sayıdır");
+            }
+          }
+        }
+        mukemmelSayi();
+      </script>
+    </body>
+  </head>
+</html>

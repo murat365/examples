@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <body>
+      <script>
+       function friendCount(a,b) {
+        let sonuc1 = 0;
+        let sonuc2 = 0;
+        for (let i = 1; i <a; i++) {
+            
+            if (a % i == 0) {
+                sonuc1 = sonuc1+i
+            }
+            
+        }
+        for (let j = 1; j <b; j++) {
+            
+            if (b % j == 0) {
+                sonuc2 = sonuc2+j
+            }
+            
+        }
+
+        if(sonuc1==b && sonuc2==a){
+            console.log("arkadaş sayılardır");
+        }else
+        {console.log("arkadaş sayı değillerdir")}
+
+
+           
+       }
+
+       friendCount(284,220);
+
+      </script>
+    </body>
+  </head>
+</html>

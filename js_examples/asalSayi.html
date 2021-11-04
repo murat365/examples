@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <body>
+      <script>
+        function asalNumeral(...numerals) {
+          for (let i = 0; i < numerals.length; i++) {
+            let sayac=0;
+
+            for (let j = 2; j < numerals[i]; j++) {
+              if (numerals[i] % j == 0) {
+                sayac++;
+              }
+            }
+
+            if (sayac == 0) {
+              console.log(numerals[i] + " "+ "bir asal sayıdır");
+            } else {
+              console.log(numerals[i] +  " "+  "asal sayı değildir");
+            }
+          }
+        }
+
+        asalNumeral(17,7,8);
+
+      </script>
+    </body>
+  </head>
+</html>
