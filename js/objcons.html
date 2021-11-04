@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+        let v1 = prompt("1. değeri giriniz");
+        let v2 = prompt("2. değeri giriniz");
+      function oku() {
+        return alert(`1. değer : ${v1} , 2. değer : ${v2}`)
+      }
+
+      function topla() {
+        toplam = v1 + v2;
+        return alert(toplam);
+      }
+      function carp() {
+        return alert(v1 * v2);
+
+      }
+
+      function hesapMakinesi(oku, topla, carp) {
+         this.oku = oku();
+         this.topla = topla();
+         this.carp = carp();
+      }
+
+      let islemler = new hesapMakinesi(oku, topla, carp);
+
+      alert(islemler);
+    </script>
+  </body>
+</html>

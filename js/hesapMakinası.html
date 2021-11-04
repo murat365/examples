@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      function hesapMakinesi() {
+        this.oku = function () {
+          this.a = +prompt("a = ", );
+          this.b = +prompt("b = ", );
+        },
+        this.topla = function () {
+          return this.a + this.b;
+        },
+        this.carp = function () {
+          return this.a * this.b;
+        }
+      }
+      let hesapMakinesi1 = new hesapMakinesi();
+      hesapMakinesi1.oku();
+      alert("toplam= "+ hesapMakinesi1.topla());
+      alert("carpım =" + hesapMakinesi1.carp());
+    </script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      function fibonacci(x) {
+        if (x == 1) {
+          return x;
+        } else {
+          return (x + fibonacci(x - 1));
+        }
+      }
+
+      let sonuc = fibonacci(4);
+      alert(sonuc);
+    </script>
+  </body>
+</html>

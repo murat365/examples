@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      let animal = {
+        zooName: "dog",
+        zooNickName: "karabaş",
+        zooAge: 3,
+        zooFullName: function () {
+          return this.zooName + " " + this.zooNickName;
+        },
+      };
+
+      // This kullanımı ve çık tı üretme
+      let tamİsim = animal.zooFullName();
+      alert(tamİsim);
+    
+
+    // Varlık Kontrolü
+      for(let a in animal){
+
+        
+        alert(animal[a]);
+
+      }
+
+      </script>
+  </body>
+</html>

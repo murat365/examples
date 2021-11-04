@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+
+     let yolYonMesafe = {
+
+          adım: 0,
+
+          ileri() {
+
+              return this.adım++;
+
+          },
+
+          geri() {
+
+              return this.adım--;
+
+
+          },
+
+          yonluMesafe() {
+
+            return this.adım;
+
+          }
+
+      };
+
+
+      yolYonMesafe.ileri();
+      yolYonMesafe.ileri();
+      yolYonMesafe.geri();
+      yolYonMesafe.geri();
+      yolYonMesafe.geri();
+      alert(yolYonMesafe.yonluMesafe());
+
+
+    </script>
+  </body>
+</html>
