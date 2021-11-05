@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+
+      function fibonacciFind(a) {
+
+          let say1 = 0
+          let say2 = 1
+          let toplam = 0
+          let fibonacciSayisi = [say1,say2];
+          for (let i = 0; i < a; i++) {
+
+              toplam = say1 + say2 ;
+              say1=say2
+              say2=toplam
+              fibonacciSayisi.push(toplam);
+
+          }
+            console.log(fibonacciSayisi[a-1])
+      }
+      
+     fibonacciFind(14)
+    </script>
+  </body>
+</html>
